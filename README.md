@@ -28,3 +28,10 @@ Given that the data is being pulled through the aid of an api, the url being use
 6. The 'MainFile' is concerned with the token pair, while 'PoolSide' is concerned with the uniswap pool.
 
 7. If the goal is to estabilish a full scale crypto-trading or poolside analytics platform, capable of adding liquidity, carrying out purchase orders and communicate effectively with token pools, the package uniswap-python can be used, with reference to https://uniswap-python.com/api.html#uniswap.Uniswap. Connections are estabilished using environment variables, using either Infura_url or w3, with the address and private keys being provided by the user.
+
+
+Observations
+
+1. CryptoCurrencies are location specific, there is a huge emphasis on the location of a transaction on the chain or the block being referred to while making an analysis. As compared to the stock trading, which traditionally takes the aid of platforms such as Quandl and is a more 'macro-focus' in its approach, crypto's are about every intricate transaction of the chain being considered, Ethereum in our case.
+
+2. Given GraphQL's unique approach, data extraction is not achieved through primitive api referencing, instead the code must incorporate the query commands.
