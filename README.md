@@ -35,3 +35,5 @@ Observations
 1. CryptoCurrencies are location specific, there is a huge emphasis on the location of a transaction on the chain or the block being referred to while making an analysis. As compared to the stock trading, which traditionally takes the aid of platforms such as Quandl and is a more 'macro-focus' in its approach, crypto's are about every intricate transaction of the chain being considered, Ethereum in our case.
 
 2. Given GraphQL's unique approach, data extraction is not achieved through primitive api referencing, instead the code must incorporate the query commands.
+
+Note - Unless you're using a virtual environment, the requirements.txt file can be generated from the 'pigar' package. Run pip3 install pigar, and then pigar.
