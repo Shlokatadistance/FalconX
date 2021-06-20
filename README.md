@@ -6,7 +6,7 @@ External Packages used -
 2. Numpy
 3. Pandas
 4. Matplotlib
-5. Graphene
+5. Graphene - Interating with GraphQL on Python.
 
 To install the packages used, run pip/pip3 install -r requirments.txt
 
@@ -23,15 +23,19 @@ Given that the data is being pulled through the aid of an api, the url being use
 
 4. Once the data has been queried, it needs to be passed through the JSON normalise function of pandas in order to split it into the relevant columns. Initally the data retrieved is in the 'String' format, which can be changed into the numeric format using pd_numerical function.
 
-5. Research work with regards to the above project is in the file titled 'Research.pdf'.
+5. Since the project is built around historical data, for quering the token pair, I have made use of the swaps query method (as suggested in the tutorial), wheras the Poolside uses the uniswap-factory method of querying the data. 
 
-6. The 'MainFile' is concerned with the token pair, while 'PoolSide' is concerned with the uniswap pool.
+6. Research work with regards to the above project is in the file titled 'Research.pdf'.
 
-7. If the goal is to estabilish a full scale crypto-trading or poolside analytics platform, capable of adding liquidity, carrying out purchase orders and communicate effectively with token pools, the package uniswap-python can be used, with reference to https://uniswap-python.com/api.html#uniswap.Uniswap. Connections are estabilished using environment variables, using either Infura_url or w3, with the address and private keys being provided by the user.
+7. The 'MainFile' is concerned with the token pair, while 'PoolSide' is concerned with the uniswap pool.
 
+8. If the goal is to estabilish a full scale crypto-trading or poolside analytics platform, capable of adding liquidity, carrying out purchase orders and communicate effectively with token pools, the package uniswap-python can be used, with reference to https://uniswap-python.com/api.html#uniswap.Uniswap. Connections are estabilished using environment variables, using either Infura_url or w3, with the address and private keys being provided by the user. However the limitation with Uniswap-Python is that the Pool functions and Liquidity Methods are supported only by Uniswap-V1. This project is built on the V2 pool.
+Uniswap-Python's true potential is realised with the connection to a wallet.
 
 Observations
 
 1. CryptoCurrencies are location specific, there is a huge emphasis on the location of a transaction on the chain or the block being referred to while making an analysis. As compared to the stock trading, which traditionally takes the aid of platforms such as Quandl and is a more 'macro-focus' in its approach, crypto's are about every intricate transaction of the chain being considered, Ethereum in our case.
 
 2. Given GraphQL's unique approach, data extraction is not achieved through primitive api referencing, instead the code must incorporate the query commands.
+
+Note - Unless you're using a virtual environment, the requirements.txt file can be generated from the 'pigar' package. Run pip3 install pigar, and then pigar.
