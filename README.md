@@ -12,7 +12,7 @@ To install the packages used, run pip/pip3 install -r requirments.txt
 
 Getting Started
 
-1. The data pulled in this project is from the Uniswap-V2 Pool. As instructred, the project is concerned about the UNI/WETH pair of tokens.
+1. The data pulled in this project is from the Uniswap-V2 Pool. As instructred, the project is concerned about the UNI/WETH pair of tokens,hence the concerned pool.
 Given that the data is being pulled through the aid of an api, the url being used is - https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2 and the program estabilishes the connection a maximum of 5 times if the connection is not estabilished earlier.
 
 2. Preliminary queries and related commands can be worked on the site - https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2. Unlike SQL, GraphQL retrieves objects when their sizing is defined. The gql package in the project is useful for running these commands in the Python Script. The different queries and the meanings of their objects can be studied from - https://uniswap.org/docs/v2/API/entities/
