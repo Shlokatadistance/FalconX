@@ -12,7 +12,7 @@ To install the packages used, run pip/pip3 install -r requirments.txt
 
 Getting Started
 
-1. The data pulled in this project is from the Uniswap-V2 Pool. As instructred, the project is concerned about the UNI/WETH pair of tokens.
+1. The data pulled in this project is from the Uniswap-V2 Pool. As instructred, the project is concerned about the UNI/WETH pair of tokens,hence the concerned pool.
 Given that the data is being pulled through the aid of an api, the url being used is - https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2 and the program estabilishes the connection a maximum of 5 times if the connection is not estabilished earlier.
 
 2. Preliminary queries and related commands can be worked on the site - https://thegraph.com/explorer/subgraph/uniswap/uniswap-v2. Unlike SQL, GraphQL retrieves objects when their sizing is defined. The gql package in the project is useful for running these commands in the Python Script. The different queries and the meanings of their objects can be studied from - https://uniswap.org/docs/v2/API/entities/
@@ -34,7 +34,7 @@ Uniswap-Python's true potential is realised with the connection to a wallet.
 
 Observations
 
-1. CryptoCurrencies are location specific, there is a huge emphasis on the location of a transaction on the chain or the block being referred to while making an analysis. As compared to the stock trading, which traditionally takes the aid of platforms such as Quandl and is a more 'macro-focus' in its approach, crypto's are about every intricate transaction of the chain being considered, Ethereum in our case.
+1. CryptoCurrencies are location specific, there is a huge emphasis on the position of a transaction on the chain or the block being referred to while making an analysis. As compared to the stock trading, which traditionally takes the aid of platforms such as Quandl and is a more 'macro-focus' in its approach, crypto's are about every intricate transaction of the chain being considered, Ethereum in our case.
 
 2. Given GraphQL's unique approach, data extraction is not achieved through primitive api referencing, instead the code must incorporate the query commands.
 
