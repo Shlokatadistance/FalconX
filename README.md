@@ -15,7 +15,7 @@ Details
 
 2. In the first methodology adopted, I have used Bitqueries inbuilt method of querying data. Bitquery uses the GraphQL format, however the schema used is a little different. In Bitquery, the data can be accessed simply by typing the name of platform/currency concerned and its related attributed. Since the project is concerned with WETH, the querying is done with ethereum{......}. The API key for bitquery can be obtained after logging in on - https://graphql.bitquery.io/ide#. The IDE is also useful for testing and studying the queried data. Bitquery clearly distinguishes the query areas, such as DEX exchanges or Contract based querying. The protocol being used is Uniswap-v2.
 
-3. The data is pulled for 1000 trades on the platform, with the trade data upto 2021-06-22.
+3. The data is pulled for 1000 trades on the platform with the timestamp on 2021-06-22.
 
 4. The second methodology adopted uses a Bitquery platform, called Bloxy (https://bloxy.info). Bloxy gives a better access to statistical data surrounding trade orders, purchases and pool information. The trial period account gives 50 free API calls accross the services selected, such as Token Pair Statistics, DEX status etc. 
 
