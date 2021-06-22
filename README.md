@@ -39,3 +39,13 @@ Observations
 2. Given GraphQL's unique approach, data extraction is not achieved through primitive api referencing, instead the code must incorporate the query commands.
 
 Note - Unless you're using a virtual environment, the requirements.txt file can be generated from the 'pigar' package. Run pip3 install pigar, and then pigar.
+
+
+
+Method 2
+
+Using BitQuery and Bloxy
+
+- Bloxy is a bitquery platform. Bloxy gives a better access into the DEX pools, with a wide range of options to choose from, as well choosing the exact nature of analysis demanded by the user
+- For this project, I made use of the 'DEX Trade' functionality, which gives access to the trades for all ERC-20 tokens on a DEX based protocol. I have chosen to use the UNISWAP (UNI) protocol. The question asked for the UNI/WETH comparison, hence the data has been filtered out to remove the extra pairs. The data spans over 6 months, from 01-01-2021.
+- All the trades are concerned with the Uniswap v2 pool protocol. Other statistical markers such as volume and liquidity and presented in a separate dataframe.
