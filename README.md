@@ -4,6 +4,8 @@ FalconX Assignment!
 Method 1
 
 Using BitQuery and Bloxy
+File : Bitquery.ipynb
+
 
 - Bloxy is a bitquery platform. Bloxy gives a better access into the DEX pools, with a wide range of options to choose from, as well choosing the exact nature of analysis demanded by the user.
 - For this project, I made use of the 'DEX Trade' functionality, which gives access to the trades for all ERC-20 tokens on a DEX based protocol. I have chosen to use the UNISWAP (UNI) protocol. The question asked for the UNI/WETH comparison, hence the data has been filtered out to remove the extra pairs. The data spans over 6 months, from 01-01-2021.
@@ -13,7 +15,7 @@ Details
 
 1. The file concerned with this method is the BitQuery.ipynb.
 
-2. In the first methodology adopted, I have used Bitqueries inbuilt method of querying data. Bitquery uses the GraphQL format, however the schema used is a little different. In Bitquery, the data can be accessed simply by typing the name of platform/currency concerned and its related attributed. Since the project is concerned with WETH, the querying is done with ethereum{......}. The API key for bitquery can be obtained after logging in on - https://graphql.bitquery.io/ide#. The IDE is also useful for testing and studying the queried data. Bitquery clearly distinguishes the query areas, such as DEX exchanges or Contract based querying. The protocol being used is Uniswap-v2.
+2. In the first methodology adopted, I have used Bitqueries inbuilt method of querying data. Bitquery uses the GraphQL format, however the schema used is a little different. The queries are still based on the same structure as TheGraph. In Bitquery, the data can be accessed simply by typing the name of platform/currency concerned and its related attributed. Since the project is concerned with WETH, the querying is done with ethereum{......}. The API key for bitquery can be obtained after logging in on - https://graphql.bitquery.io/ide#. The IDE is also useful for testing and studying the queried data. Bitquery clearly distinguishes the query areas, such as DEX exchanges or Contract based querying. The protocol being used is Uniswap-v2.
 
 3. The data is pulled for 1000 trades on the platform with the timestamp on 2021-06-22.
 
@@ -26,7 +28,7 @@ Details
 7. The project also mentioned the need for volume and liquidity, which is obtained by selecting the ' Statistics of Token DEX Trades at DEX' option, and entering the Uniswap token.
 
 
-
+Extra Package - Requests
 
 Method 2 - Simple and Tutorial Based
 
